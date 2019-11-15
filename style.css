@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background: white;
+  color: #20070A;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  color: #282C34;
+  font-size: 2em;
+}
+
+a:hover {
+  text-decoration: none;
+  font-style: italic;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  color: #726D6D;
+  font-size: 3em;
+  text-align: center;
+  padding: 150px 0 100px;
+}
+
+h2:hover {
+  font-style: italic;
+}
+
+.row {
+  justify-content: space-evenly;
+}
+
+.container-fluid {
+  padding: inherit;
+}
+
+
+/*----------------NAVBAR---------------*/
+
+
+#navbar {
+  padding: 0 200px;
+  background-color:#20232A !important;
+}
+
+#navbar a {
+  font-size: 1.5em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #61DAF9;
+}
+
+/*----------HEADER-------------*/
+
+@keyframes wheelHueColor { /*animation couleur bleu/blanc -> header*/
+  from, to { color: #61DAF9; }
+  50% { color: white; }
+}
+
+header{
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-right: 150px;
+  padding-left: 150px;
+  animation: wheelHueColor 5s infinite; /*animation CSS transition couleur bleu/blanc*/
+  background-color: #282C34;
+}
+
+header h1 {
+  color: #61DAF9;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  font-weight: bold;
+
+}
+
+header p {
+  margin: auto;
+  padding-bottom: 100px;
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*-------------A_PROPOS------------*/
+
+#photoCV {
+  position: relative;
+  height: 300px;
+  width: auto;
+  border-radius: 2%;
+  margin: 0 auto;
+}
+
+#apropos {
+  display: flex;
+  flex-direction: row;
+  height: 720px;
+}
+
+#apropos p {
+  word-wrap: break-word;
+  width: 60%;
+  text-align:justify;
+  margin: 0 118px 0 auto;
+  padding: 70px
+  
+}
+
+
+/*----------BODY/CARDS-----------*/
+
+
+.sections_paires {
+  background-color:#F7F7F7;
+  width: 100%;
+  height: 100vh;  
+  padding-right: 150px;
+  padding-left: 150px;
+  
+}
+
+.sections_impaires {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100vh;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+.container{
+  background-color: white;
+  width: 100%;
+  border: solid 1px #ECECEC;
+}
+
+.card-white {
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  padding: 16px;
+  margin: 50px 0px;
+  min-height: 250px;
+}
+
+.card-white:hover{
+  transform: scale(0.95);
+}
+
+.card-white img {
+  margin-bottom: 20px;
+}
+
+.card-white:hover img {
+  filter: blur(1.5px);
+}
+
+/*---------FOOTER-----------*/
+
+footer{
+  background-color: #20232A;
+  color: lightgrey;
+  text-align: center;
+  height: 250px;
+}
+
+footer p {
+  color: #61DAF9;
+  background-color: #282C34;
+  font-size: 2.5em;
+  padding: 5px;
+}
+
+footer p:hover{
+  font-style: italic;
+}
+
+footer a {
+  color: lightgrey;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #61DAF9;;
+}
+
+footer ul {
+  padding-inline-start: 0px;
+  padding: 10px;
+  padding-top: 30px;
+}
+
+footer li {
+  display: inline-block;
+  margin: 7px;
+}
+ 
+/*-----------------------------------------------responsive--------------------------------------------*/
+
+@media (max-width: 990px){
+  
+.navbar {
+  padding: 0 100px;
+}
+
+  h2 {
+    font-size: 4em;
+    padding-top: 50px;
+  }
+
+  #photoCV {
+    margin-bottom: 80px;
+  }
+    
+  #apropos {
+    flex-direction: column;
+  }
+
+  #apropos p {
+    width: 70%;
+  }
+
+  .sections_paires {
+    height: inherit;
+    padding: 0 100px;
+  }
+
+  .sections_impaires {
+    height: inherit;
+    padding: 0 100px;
+  }
+}
