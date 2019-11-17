@@ -19,6 +19,8 @@ a:hover {
   font-style: italic;
 }
 
+li {display: inline-block;}
+
 img{
   display: block;
   margin: 0 auto;
