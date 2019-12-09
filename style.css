@@ -1,3 +1,31 @@
+@media (max-width: 750px) {
+  html {
+    width: 100%;
+  }
+  #navbar{
+    padding: 0 100px !important;
+    background-color: #20232A !important;
+  }
+  
+  #navbar a {
+    font-size: 1em;
+    padding: 0;
+  }
+
+  h2 {
+    color: #726D6D;
+    text-align: center !important;
+    font-size: 40px !important;
+  }
+
+  .fixed-top{
+    position: inherit;
+  }
+
+  
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -128,9 +156,6 @@ header p {
   word-wrap: break-word;
   width: 60%;
   text-align:justify;
-  margin: 0 118px 0 auto;
-  padding: 70px
-  
 }
 
 
