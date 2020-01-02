@@ -21,8 +21,6 @@
   .fixed-top{
     position: inherit;
   }
-
-  
 }
 
 
@@ -75,6 +73,9 @@ h2:hover {
   padding: inherit;
 }
 
+li {
+  text-align: left;
+}
 
 /*----------------NAVBAR---------------*/
 
