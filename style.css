@@ -47,8 +47,6 @@ a:hover {
   font-style: italic;
 }
 
-li {display: inline-block;}
-
 img{
   display: block;
   margin: 0 auto;
@@ -270,7 +268,7 @@ footer li {
   }
 
   #apropos p {
-    width: 70%;
+    width: 100%;
   }
 
   .sections_paires {
